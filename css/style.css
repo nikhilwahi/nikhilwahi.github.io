@@ -1,0 +1,137 @@
+/*
+CSS Reset
+http://meyerweb.com/eric/tools/css/reset/
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* end reset */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    background: #f2f2f2;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #666;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+}
+#particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#intro {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}
+#name {
+    font-size: 5em;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+#name::after {
+    content: '';
+    width: 2em;
+    display: block;
+    background: #999;
+    height: .1em;
+    margin: .05em auto;
+}
+#first-name, #last-name {
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+#name-wrapper {
+    display: inline-block;
+    width: auto;
+}
+#name-wrapper:hover #first-name {
+    color: #003C7D;
+}
+#name-wrapper:hover #last-name {
+    color: #F47F24;
+}
+.social-content li {
+    display: inline-block;
+    padding: .8em;
+    padding-bottom: 0em;
+}
+.social-content li a {
+    display: inline-block;
+    padding: 0;
+    font-size: 1.9em;
+    color: #666;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+#mail:hover, #linkedin:hover {
+    color: #F47F24;
+}
+#github:hover {
+    color: #003C7D;
+}
+.btn {
+    display: inline-block;
+    padding: .7em;
+    margin-top: 1em;
+    border: .12em solid #666;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: #666;
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.btn:hover {
+    color: #F47F24;
+    border-color: #003C7D;
+}
